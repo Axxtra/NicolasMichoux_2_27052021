@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('police/Raleway-Black.ttf') format('truetype'),
+         
+}
+
+body /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'Raleway', Arial, serif;
+}
+
+#conteneur
+{
+    margin: 30px;
+    display: flex;
+}
+
+
+.menu
+{
+    
+    display: flex-end;
+    justify-content: space-between;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: black;
+   
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration :overline;
+   color: #0065FC;
+}
+
