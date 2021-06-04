@@ -9,30 +9,102 @@ body /* Utilisation de la police qu'on vient de définir sur les titres */
     font-family: 'Raleway', Arial, serif;
 }
 
+h3
+{
+font-size: 21px;
+}
+
 #conteneur
 {
     margin: 30px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
+/* Navigation */
 
-.menu
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    color: #181818;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top : 2px solid #0065FC;
+    padding-top: 30px;
+}
+
+#inscription
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+#recherche
+{
+    margin-top: 5px;
+    margin: 30px;
+    max-width: 500px;
+}
+
+#champ_recherche
 {
     
-    display: flex-end;
-    justify-content: space-between;
-}
+    font-weight: bolder;
+    max-width: 230px;
+    border: 1px #F2F2F2 solid;
+    padding-top: 13.5px;
+    padding-bottom: 13px;
+    margin: 0px;
+    color: black;
 
-a /* Liens par défaut (non survolés) */
+}
+::placeholder
 {
-   text-decoration: none;
-   color: black;
-   
+    color: black;
+    font-weight: bolder;
 }
 
-a:hover /* Apparence au survol des liens */
+#bouton_recherche
 {
-   text-decoration :overline;
-   color: #0065FC;
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    max-width: 150px;
+    border: 1px #0065FC solid;
+    border-radius: 1px 15px 15px 1px;
+    padding-top: 13.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 13px;
+    margin: -6px;
 }
 
+#icone_location
+{
+    margin: -5px;
+    max-width: 150px;
+    background-color: #F2F2F2;
+    padding-top: 11.7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 14px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px 1px 1px 15px;
+}
