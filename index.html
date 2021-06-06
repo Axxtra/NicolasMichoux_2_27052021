@@ -3,20 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>CV</title>
+        <title>Réservia</title>
         <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div id="conteneur">
                 <div class="element"><img src="images/Reservia.svg" alt="logo"> 
-                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
-                <p>En plein centre ville ou en pleine nature</p>
+                    <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                    <p>En plein centre ville ou en pleine nature</p>
                 
                 </div>
-          
-            
-                
+
                 <nav>
                     <ul>
                         <li><a href="">Hébergements</a></li>
@@ -26,14 +24,23 @@
                 </nav>
              </div>
      </header>
+
         <div id="recherche">
-        <form method="post" action="traitement.php">
-            <p>
-                <i class="fas fa-map-marker-alt" id="icone_location"></i>
-                <input type="text" name="champ_recherche" id="champ_recherche" placeholder="  Marseille, France" size="30" maxlength="30" />
-                <input type="submit" id="bouton_recherche" value="Rechercher" />
-            </p>
-        </form>
+            <form method="post" action="traitement.php">
+                <p>
+                    <i class="fas fa-map-marker-alt" id="icone_location"></i>
+                    <input type="text" name="champ_recherche" id="champ_recherche" placeholder="  Marseille, France" size="30" maxlength="30" />
+                    <input type="submit" id="bouton_recherche" value="Rechercher" />
+                </p>
+                <p>
+                    <div id="Conteneur_Filtres">
+                    <div class="elements_filtres"> <div class="mot_filtre">Filtres </div><i class="fas fa-money-bill-wave" id="icone_billet"></i> <a href="" id="filtre_eco">Economique</a></div> 
+                    <div class="elements_filtres"><i class="fas fa-child" id="icone_familial"></i> <a href="" id="filtre_familial">Familial</a></div>
+                    <div class ="elements_filtres"><i class="fas fa-heart"id="icone_coeur"></i> <a href="" id="filtre_romantique">Romantique</a></div>
+                    <div class="elements_filtres"><i class="fas fa-dog"id="icone_animaux"></i><a href="" id="filtre_animaux">Animaux autorisés</a></div>
+                    </div>
+                </p>
+            </form>
         </div>
     </body>
 </html>
