@@ -35,4 +35,58 @@ a:hover /* Apparence au survol des liens */
    text-decoration :overline;
    color: #0065FC;
 }
+    
+#Conteneur_info
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#conteneur_hebergements
+{
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    padding-top: 15px;
+    height: 625px;
+    width: 880px;
+    border-radius: 20px;
+    
+}
+
+.img_litdouble
+{
+    height: 115px;
+    width: 235px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fond_cannebiere
+{
+    background-color: white;
+    height: 200px;
+    width: 245px;
+    margin-left:40px ;
+    margin-top: 20px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.phrase_hebergements
+{
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+#conteneur_vignettes
+{
+    display: flex;
+    
+}
 
