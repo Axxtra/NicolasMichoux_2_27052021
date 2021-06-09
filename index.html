@@ -3,40 +3,138 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-                <title>CV</title>
+        <title>Réservia</title>
+        <script src="https://kit.fontawesome.com/d55ef477fb.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <div id="conteneur">
-            <div class="titre"><img src="images/Reservia.svg" alt="logo"> 
-                <h3>Trouvez vos  hébergement pour des vacances de rêve</h3>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-        </div>         
-
-            <div id ="menu">
-                <nav>
-                    <div class="element 1"> <a href="#ancre_hebergements">Hébergements</a> </div>
-                    <div class="element 2"><a href ="#ancre_activites">Activités</a> </div>
-                    <div class="element 3"><a href ="#ancre_sincrire">S'incrire</a> </div>
-                </nav>
-            </div>
-
-            <section>
+        <div id="bloc_page">
+            <header>
+                <div id="conteneur">
+                    <div class="element"><img src="images/Reservia.svg" alt="logo"> 
+                        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                        <p>En plein centre ville ou en pleine nature</p>
                 
-                <div id="conteneur_hebergements">
-                    <div class="phrase_hebergements">Hébergements à Marseille</div>
-                        <div id ="conteneur_vignettes">
-                            <div class="fond_cannebiere">
-                                <div class="img_cannebiere"><img class="img_litdouble" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image auberge cannebiere"></div>
-                                <div class="titre_cannebiere">Auberge La Cannebiere</div>
-                                <div class="prix_cannebiere">Nuit à partir de 25</div>
-                            </div>
-                        </div>
-                    
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="">Hébergements</a></li>
+                            <li><a href="">Activités</a></li>
+                            <li><a href="" id="inscription">S'inscrire</a></li>
+                        </ul>
+                    </nav>
                 </div>
+            </header>
+
+            <div id="recherche">
+                <form method="post" action="#">
+                    <p>
+                        <div id="conteneur_recherche">
+                            <i class="fas fa-map-marker-alt" id="icone_location"></i>
+                            <input type="text" name="champ_recherche" id="champ_recherche" placeholder="  Marseille, France" size="30" maxlength="30" />
+                            <input type="submit" id="bouton_recherche" value="Rechercher" />
+                        </div>
+                    </p>
+                    <p>
+                        <div id="Conteneur_Filtres">
+                        <div class="elements_filtres"> <div class="mot_filtre">Filtres </div><i class="fas fa-money-bill-wave" id="icone_billet"></i> <a href="" id="filtre_eco">Economique</a></div> 
+                        <div class="elements_filtres"><i class="fas fa-child" id="icone_familial"></i> <a href="" id="filtre_familial">Familial</a></div>
+                        <div class ="elements_filtres"><i class="fas fa-heart"id="icone_coeur"></i> <a href="" id="filtre_romantique">Romantique</a></div>
+                        <div class="elements_filtres"><i class="fas fa-dog"id="icone_animaux"></i><a href="" id="filtre_animaux">Animaux autorisés</a></div>
+                        </div>
+                    </p>
+
+                    <div id="Conteneur_info">
+                    <p><div class="elements_filtres"><i class="fas fa-info" id="icone_info"></i><div class="phrase_info">Plus de 500 logements sont disponibles dans cette ville</div></div></p>
+                    </div>
+                </form>
+            </div>
+            <div id="conteneur_sections">
+
             
-            </section>
+            <section>
+                <div id="conteneur_hebergements">
+                    <div class="phrase">Hébergements à Marseille</div>
+                    <div class ="conteneur_vignettes">
+                        <div class="fond_cannebiere">
+                            <div class="img_cannebiere"><img class="img_litdouble" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image auberge cannebiere"></div>
+                            <div class="titre_cannebiere">Auberge La Cannebiere</div>
+                            <div class="prix_cannebiere">Nuit à partir de <strong>25&euro;</strong></div>
+                            <div class="note_cannebiere"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" id="blackstar_cannebiere"></i></div>   
+                        </div>
+
+                        <div class="fond_port">
+                            <div class="img_port"><img class="chambre_port" src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image Hôtel du port"></div>
+                            <div class="titre_port">Hôtel du port</div>
+                            <div class="prix_port">Nuit à partir de <strong>52&euro;</strong></div>
+                            <div class="note_port"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>   
+                        </div>
+
+                        <div class="fond_mouettes">
+                            <div class="img_mouettes"><img class="chambre_mouettes" src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image Hôtel les mouettes"></div>
+                            <div class="titre_mouettes">Hôtel Les Mouettes</div>
+                            <div class="prix_mouettes">Nuit à partir de <strong>76&euro;</strong></div>
+                            <div class="note_mouettes"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"id="blackstar_mouettes"></i></div>   
+                        </div>
+
+                        <div class="fond_mer">
+                            <div class="img_mer"><img class="chambre_mer" src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="image Hôtel de la mer"></div>
+                            <div class="titre_mer">Hôtel de la mer</div>
+                            <div class="prix_mer">Nuit à partir de <strong>45&euro;</strong></div>
+                            <div class="note_mer"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"id="blackstar_mer1"></i><i class="fas fa-star"id="blackstar_mer2"></i></div>   
+                        </div>
+
+                        <div class="fond_panier">
+                            <div class="img_panier"><img class="chambre_panier" src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="image Auberge Le Panier"></div>
+                            <div class="titre_panier">Auberge Le Panier</div>
+                            <div class="prix_panier">Nuit à partir de <strong>23&euro;</strong></div>
+                            <div class="note_panier"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"id="blackstar_panier"></i></div>   
+                        </div>
+
+                        <div class="fond_amina">
+                            <div class="img_amina"><img class="chambre_amina" src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="image Auberge Le Panier"></div>
+                            <div class="titre_amina">Hôtel chez Amina</div>
+                            <div class="prix_amina">Nuit à partir de <strong>96&euro;</strong></div>
+                            <div class="note_amina"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>   
+                        </div>
+                        <div class="phrase"><p>Afficher plus</p></div>  
+                    </div>
+                </div>
+           </section>
+                
+           <section>
+                <div id="conteneur_populaires">
+                    <div class="phrase">Les plus populaires <i class="fas fa-chart-line" id="icone_pop"></i></div>
+                    
+                    <div class="fond_populaires">
+                        <div class="img_populaires"><img class="chambre_populaires" src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image Auberge Le Panier"></div>
+                        <div class="texte_populaires">
+                            <div class="titre_populaires">Hôtel le soleil du matin</div>
+                            <div class="prix_populaires">Nuit à partir de <strong>128&euro;</strong></div>
+                            <div class="note_populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>   
+                        </div>
+                    </div>
+
+                    <div class="fond_populaires">
+                        <div class="img_populaires"><img class="chambre_populaires" src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image Auberge Le Panier"></div>
+                        <div class="texte_populaires">
+                            <div class="titre_populaires">Au coeur de l'eau chambres d'hôtes</div>
+                            <div class="prix_populaires">Nuit à partir de <strong>96&euro;</strong></div>
+                            <div class="note_populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"id="blackstar_panier"></i></div>   
+                        </div>
+                    </div>
+
+                    <div class="fond_populaires">
+                        <div class="img_populaires"><img class="chambre_populaires" src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="image Auberge Le Panier"></div>
+                        <div class="texte_populaires">
+                            <div class="titre_populaires">Hôtel tout bleu et blanc</div>
+                            <div class="prix_populaires">Nuit à partir de <strong>68&euro;</strong></div>
+                            <div class="note_populaires"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"id="blackstar_panier"></i></div>   
+                        </div>
+                    </div>                  
+                </div>
+           </section>
+        </div>
         </div>
     </body>
 </html>
