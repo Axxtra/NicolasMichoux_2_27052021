@@ -310,6 +310,8 @@ element_information
     width: 880px;
     border-radius: 20px;
     
+    
+    
 }
 
 .img_litdouble
@@ -326,7 +328,9 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -375,6 +379,8 @@ element_information
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 25px;
+    align-content: space-between;
     
     
     
@@ -387,8 +393,9 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin-top: 40px;
-    margin : auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -430,8 +437,9 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin-top: 40px;
-    margin : auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -478,7 +486,7 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -532,7 +540,7 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -583,7 +591,7 @@ element_information
     background-color: white;
     height: 210px;
     width: 245px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -645,7 +653,7 @@ element_information
     background-color: white;
     height: 145px;
     width: 345px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -688,7 +696,15 @@ element_information
 }
 
 
-#icone_pop
+.icone_pop
 {
-    padding-right: 10px;
+   margin: auto;
+   margin-right: 40px;
+}
+
+
+.conteneur_titrepop
+{
+    display: flex;
+    justify-content: space-between;
 }
