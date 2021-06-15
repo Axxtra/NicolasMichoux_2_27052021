@@ -11,8 +11,10 @@ body
 
 #bloc_page
 {
-    width: 1440px;
+    width: 1340px;
     margin: auto;
+    margin-left: 50px;
+    
 }
 
 h3
@@ -340,6 +342,7 @@ element_information
     border-radius: 20px 20px 0px 0px;
     margin-top: 5px;
     margin-left: 5px;
+    object-fit: cover;
 }
 
 .titre_hebergement
@@ -367,17 +370,21 @@ element_information
 #conteneur_sections
 {
     display: flex;
+    justify-content: space-between;
+    width: 1340px;
 }
 
 #conteneur_populaires
 {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     padding-top: 10px;
     height: 625px;
     width: 420px;
     border-radius: 20px;
-    margin-left: 40px;
+    margin-top: 20px;
+    
 }
 
 .fond_populaires
@@ -385,10 +392,7 @@ element_information
     background-color: white;
     height: 145px;
     width: 345px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -402,6 +406,7 @@ element_information
     border-radius: 20px 0px 0px 20px;
     margin-top: 5px;
     margin-left: 5px;
+    object-fit: cover;
 }
 
 .texte_populaires
@@ -468,6 +473,7 @@ element_information
     height: 390px;
     width: 300px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .img_activités2
@@ -475,6 +481,7 @@ element_information
     width: 300px;
     height: 140px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .img_fort
@@ -482,6 +489,7 @@ element_information
     width: 300px;
     height: 180px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .fond_fort
@@ -497,6 +505,7 @@ element_information
     width: 300px;
     height: 110px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .fond_frioul
@@ -535,31 +544,45 @@ footer
 {
     background-color: #F2F2F2;
     height: 220px;
+    width: auto;
+    
 }
 
 #conteneur_footer
 {
     display: flex;
     justify-content: space-between;
-    margin-right :370px;
     font-size: 17px;
     padding-top: 45px;
+    width: 1000px;
+    margin-left: 50px;
     
-}
-
-footer ul
-{
-    list-style-type: none;
     
 }
 
 footer a
 {
     text-decoration: none;
+    padding-top: 5px;
+    color: black;
 }
 
 .titre_footer
 {
-    margin-left: 40px;
     font-weight: bold;
+    margin-left: 20px;
+}
+
+.liens_footer
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.liste_footer
+{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
 }
