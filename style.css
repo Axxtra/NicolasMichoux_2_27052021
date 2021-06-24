@@ -12,8 +12,8 @@ body
 #bloc_page
 {
     height: auto;
-    max-width: 1340px;
-    width: auto;
+    width: 1340px;
+    
     margin: auto; 
 }
 
@@ -251,6 +251,13 @@ nav a:hover
      margin-left: -20px;
   }
 
+  #filtre_double
+  {
+      display: flex;
+      justify-content: space-between;
+      width: 450px;
+  }
+
 .elements_filtres
 {
     display: flex;
@@ -311,17 +318,22 @@ nav a:hover
     margin-top: 20px;
     background-color: #F2F2F2;
     padding-top: 15px;
-    max-height: 625px;
-    height: auto;
-    max-width: 880px;
-    width: auto;
+    width: 880px;
     border-radius: 20px;
 }
-
 .phrase
 {
     font-weight: bold;
     font-size: 21px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.phrase_pop
+{
+    font-weight: bold;
+    font-size: 15px;
     margin-top: 15px;
     margin-left: 40px;
     margin-bottom: 15px;
@@ -332,7 +344,7 @@ nav a:hover
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 25px;
-    align-content: space-between;
+    align-content: space-between; 
 }
 
 
@@ -404,7 +416,6 @@ nav a:hover
     width: 420px;
     border-radius: 20px;
     margin-top: 20px;
-    
 }
 
 .fond_populaires
@@ -412,7 +423,7 @@ nav a:hover
     background-color: white;
     height: 145px;
     width: 345px;
-    margin:auto;
+    margin: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -435,7 +446,6 @@ nav a:hover
     flex-direction: column;
     justify-content: space-around;
     margin-left: 20px;
-    
 }
 
 .titre_populaires
@@ -467,7 +477,7 @@ nav a:hover
     display: flex;
     flex-direction: column;
     padding-top: 15px;
-    height: 445px;
+    
     width: 1340px;
     border-radius: 20px;
     
@@ -609,18 +619,32 @@ footer a
 
 @media screen and (max-device-width: 480px)
 {
+    #bloc_page
+    {
+        width: 336px;
+        height: 100%;
+        margin:0%;
+        
+    }
+    
     body
     {
-        width: 376px;
-        height: auto;
-        margin: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 336px;
     }
 
     #conteneur
     {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;  
+        width: 376px; 
+        height: 130px;
+        justify-content: unset;
+        margin-left: 0%;
+        
+        
     }
 
     .element:nth-child(1)
@@ -635,11 +659,11 @@ footer a
     .element:nth-child(2)
     {
         display: flex;
-        justify-content: center;
+        
         order: 3;
         padding-bottom: 10px;
         width: 188px;
-        margin: auto; 
+        justify-content: center;
         border-bottom:  3px solid #0065FC;
 
         
@@ -650,10 +674,11 @@ footer a
         display: flex;
         justify-content: center;
         order: 4;
-        margin: auto;
+        margin-right:-10px;
+        margin: 0;
         padding-bottom: 10px;
         width: 188px;
-        border-bottom:  3px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
  
     }
 
@@ -674,8 +699,14 @@ footer a
 
     #bloc_titre
     {
-        margin-left: 40px;
+        margin-left: 20px;
         margin-right: 20px;
+    }
+
+    #recherche
+    {
+        width: 336px;
+        
     }
     
 
@@ -688,12 +719,12 @@ footer a
 
     #champ_recherche
     {
-        width: auto;
+        width: 200px;
     }
 
     #bouton_recherche
     {
-        width: auto;
+        width: 50px;
     }
 
     #filtres
@@ -708,9 +739,9 @@ footer a
     #conteneur_filtres
     {
         display: flex;
-        margin: auto;
+        
         justify-content: space-between;
-        width: auto;
+        width: 376px;
         flex-wrap: wrap;
    
     }
@@ -720,6 +751,11 @@ footer a
         display: flex;
         margin-top: 13px;
         width: 336px;
+    }
+
+    #filtre_double
+    {
+        width: 380px;
     }
 
     #filtre_eco
@@ -757,38 +793,53 @@ footer a
         width: 336px;
     }
     
-   
     #conteneur_sections
     {
+        height: 100%;
         width: 336px;
         margin-top: 0%;
-        display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
         border: 1px solid white;
     }
 
+    .fond_hebergement:nth-child(1)
+    {
+        margin-bottom: -10px;
+    }
+
+    .conteneur_vignettes
+    {
+        width: 336px;
+        flex-wrap: wrap;
+    }
+
     #conteneur_hebergements
     {
-        width: auto;
-        height: auto;
+        
+        width: 336px;
         margin-left: 20px;
         margin-right: 20px;
-        margin: 20px;
         background-color: white;
         
+    }
+
+    .phrase_info
+    {
+        padding-top: 20px;
     }
 
     .fond_hebergement
     {
         background-color: white;
-        height: 200px;
         width: 336px;
         border: 1px #F2F2F2 solid;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         box-shadow: 2px 2px 4px #F2F2F2;
+        margin-bottom: 0%;
+        
     }
 
     .chambre_hebergement
@@ -796,7 +847,10 @@ footer a
         height: 115px;
         width: 325px;
         border-radius: 20px 20px 0px 0px;
+        margin: 5px;
         object-fit: cover;
+        
+        
     }
 
     .titre_hebergement
@@ -821,18 +875,21 @@ footer a
         margin-top: 10px;
     }
 
-    .phrase
-    {
-        margin: 0px;
-    }
-
     #conteneur_populaires
     {
-        width: auto;
+        width: 376px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 
         border-radius: 0%;
+        
+    }
+
+    .fond_populaires
+    {
+        width: 325px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .texte_populaires
@@ -848,60 +905,88 @@ footer a
         margin-left: 20px;
     }
 
+    .phrase_pop
+    {
+        margin-top: 30px;
+        font-size: 17px;
+        margin-left: 0px;
+         
+    }
+
     #conteneur_activites
     {
         width: 336px;
-        height: auto;
-        margin: auto;
-        margin-bottom: 0px;
+        flex-wrap: wrap;
+         
         
     }
 
     .conteneur_vignettes2
     {
-        display: flex;
+        height: 1310px;
         flex-direction: column;
+        align-content: space-between;
         width: 336px;
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 20px; 
+        
     }
 
-    #conteneur_groupes
+    .phrase
     {
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;  
     }
+
     
-   
-    
-    .conteneur_vignettes
-    {
-        width: 336px;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-    }
 
     .fond_activités1
     {
-        height: auto;
+        height: 190px;
+        width: 325px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .fond_activités2
     {
-        height: auto; 
+        height: 190px;
+        width: 325px;
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
 
     .conteneur_double
     {
+        
         height: auto;
+        width: 325px;
+        flex-direction: column;
+        
+    }
+
+    .fond_fort
+    {
+        height: 190px;
+        width: 325px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .fond_frioul
+    {
+        height: 190px;
+        width: 325px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .img_activités1
     {
         height: 115px;
         width: 325px;
+        
     }
     .img_activités2
     {
@@ -909,12 +994,41 @@ footer a
         width: 325px;
     }
 
-    
-    
+    .img_fort
+    {
+        height: 115px;
+        width: 325px;
+    }
+
+    .img_iles
+    {
+        height: 115px;
+        width: 325px;
+    }
+
     #conteneur
     {
         display: flex;
         flex-wrap: wrap;
     }
 
+    #conteneur_footer
+    {
+        width: 376px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer
+    {
+        height: fit-content;
+        width: 376px;
+        margin: 0%;
+    }
+
+    .liens_footer
+    {
+        margin-bottom: 20px;
+    }
 }
