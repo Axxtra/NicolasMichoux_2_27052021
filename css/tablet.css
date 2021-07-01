@@ -13,7 +13,6 @@ body
 {
     height: auto;
     width: 1340px;
-     
     margin-left: 40px;
 }
 
@@ -103,6 +102,14 @@ section a:hover
     height: 46px;
     border: 1px #F2F2F2 solid;
     color: black;
+}
+
+.icone_recherche
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px 20px 20px 20px;
 }
 
 ::placeholder

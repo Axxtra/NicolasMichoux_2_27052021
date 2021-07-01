@@ -106,7 +106,6 @@ section a:hover
 
 ::placeholder
 {
-    
     font-weight: bolder;
 }
 
@@ -120,6 +119,21 @@ section a:hover
     border: 1px #0065FC solid;
     border-radius: 1px 15px 15px 1px;
     margin-left :-6px;
+}
+
+
+.icone_recherche
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    width: 50px;
+    height: 48px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+    display: none;
 }
 
 #icone_location   
@@ -182,7 +196,7 @@ section a:hover
     justify-content: center;    
 }
 
-#icone_info
+.icone_info
 {
     color: #0065FC;
     height: 25px;
@@ -192,6 +206,7 @@ section a:hover
     display: flex;
     align-items: center;
     justify-content: center;    
+    
 }
 
 #filtre_eco
@@ -293,6 +308,7 @@ section a:hover
     display:flex;
     align-content: center;
     padding-left: 12px;
+    margin-top: 5px;
 }
 
 #filtres
