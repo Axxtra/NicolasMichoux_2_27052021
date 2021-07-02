@@ -26,7 +26,7 @@ h3
 {
     display: flex;
     justify-content: space-between; 
-    width: auto;
+    width: 100%;
     margin-top: 40px;
     
 }
@@ -107,6 +107,8 @@ section a:hover
 ::placeholder
 {
     font-weight: bolder;
+    color: black;
+    text-decoration: none;
 }
 
 #bouton_recherche 
@@ -384,7 +386,7 @@ section a:hover
 }
 
 
-#blackstar_hebergement
+.blackstar_hebergement
 {
     color: #F2F2F2;
 }
@@ -519,11 +521,9 @@ section a:hover
     display: flex;
     flex-direction: column;
     padding-top: 15px;
-    
     width: 1340px;
     border-radius: 20px;
-    
-    margin-bottom: 120px;   /*a revoir */ 
+    margin-bottom: 60px;
 }
 
 .conteneur_vignettes2
@@ -536,7 +536,6 @@ section a:hover
 {
     display: flex;
     flex-direction: column;
-    
     width: 300px;
     height: 445px;
     justify-content: space-between;  
@@ -629,11 +628,9 @@ aside a:hover
 footer
 {
     background-color: #F2F2F2;
-    height: 220px;
-    width: 1440px;
-    margin-bottom: 0px;
-    margin-top: 50px;
-    margin: auto;
+    
+    width: 100%;
+    
 }
 
 #conteneur_footer
@@ -644,7 +641,7 @@ footer
     padding-top: 45px;
     width: 75%;
     margin-left: 30px;
-    
+    height: fit-content;
 }
 
 footer a

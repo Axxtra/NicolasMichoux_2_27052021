@@ -9,8 +9,9 @@ body
 {
     width: 375px;
     height: 100%;
-    margin: 0px;
-    
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 
