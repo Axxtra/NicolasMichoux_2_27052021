@@ -8,7 +8,7 @@ body
 #bloc_page
 {
     width: 375px;
-    height: 100%;
+    height: auto;
     margin-right: 0px;
     display: flex;
     flex-direction: column;

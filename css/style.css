@@ -7,11 +7,12 @@
 body 
 {
     font-family: 'Raleway', Arial, serif;
+    height: auto;
 }
 
 #bloc_page
 {
-    height: auto;
+    
     width: 1340px;
     margin: auto; 
 }
@@ -628,9 +629,8 @@ aside a:hover
 footer
 {
     background-color: #F2F2F2;
-    
     width: 100%;
-    
+    height: auto;
 }
 
 #conteneur_footer
