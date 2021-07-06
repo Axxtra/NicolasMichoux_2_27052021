@@ -2,12 +2,10 @@
 {
     width: 1024px;
     height: auto;
-    margin: auto;
+    margin :auto;
     display: flex;
     flex-direction: column;
 }
-
-
 
 #conteneur
 {
@@ -18,6 +16,7 @@
     height: 130px;
     justify-content: unset;
     margin-left: 0%;
+    
 }
 
 .element:nth-child(1)
@@ -27,8 +26,6 @@
     padding-bottom: 10px;
     margin-left: 20px;
 }
-
-
 
 nav a:hover
 {
@@ -84,7 +81,7 @@ nav a:hover
     color: white;
     width: 50px;
     height: 50px;
-    border: 1px #F2F2F2 solid;
+    border: none;
     border-radius: 15px 15px 15px 15px;
     margin-left: -10px;
 }
@@ -103,7 +100,6 @@ nav a:hover
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
 }
 
 #conteneur_populaires
@@ -124,7 +120,6 @@ section
     width: 100%;
 }
 
-
 #conteneur_sections
 {
     height: 100%;
@@ -133,8 +128,6 @@ section
     flex-direction: column-reverse;
     border: none;
 }
-
-
 
 .conteneur_vignettes
 {
@@ -147,8 +140,7 @@ section
     width: 100%;
     margin-top: 0%;
     margin-bottom: 0%;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 .phrase_info
@@ -167,8 +159,7 @@ section
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 4px #F2F2F2;
-    margin-bottom: 12px;
-    
+    margin-bottom: 12px; 
 }
 
 .chambre_hebergement
@@ -178,8 +169,6 @@ section
     border-radius: 20px 20px 0px 0px;
     margin: 5px;
     object-fit: cover;
-    
-    
 }
 
 .titre_hebergement
@@ -211,15 +200,12 @@ section
     margin-left: 20px;
 }
 
-
-
 .fond_populaires
 {
     flex-direction: row;
     width: 30%;
     margin: auto;
     margin-bottom: 10px;
-    
 }
 
 .texte_populaires
@@ -227,18 +213,13 @@ section
     width: 100%;
     height: auto;
     display: flex;
-    
 }
-
-
 
 .conteneur_titrepop
 {
     margin-left: 20px;
     margin-bottom: 15px;
     width: 100%;
-
-
 }
 
 .phrase_pop
@@ -255,8 +236,6 @@ section
     margin-right: 20px;
 }
 
-
-
 .phrase
 {
     margin-bottom: 10px;
@@ -268,80 +247,29 @@ section
 #conteneur_activites
 {
     display: flex;
-    
     height: fit-content;
     padding-top: 15px;
     width: 100%;
     border-radius: 0px;
-    
-    
 }
 
 .conteneur_vignettes2
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-
-
-.fond_activités1
-{
-    
-    width: 230px;
-    
-    
-}
-
-.fond_activités2
-{
-    
-    width: 230px;
-    
+    margin-right: 0%;
 }
 
 .conteneur_double
 {
-    
-    
     flex-direction: column;
     width: auto;
     margin :auto;
 }
 
-.fond_fort
+.fond_fort, .fond_frioul, .img_activités1, .img_activités2, .img_fort, .img_iles, .fond_activités2, .fond_activités1
 {
-    
-    width: 230px;
-}
-
-.fond_frioul
-{
-    
-    width: 230px;
-}
-
-.img_activités1
-{
-    
-    width: 230px;
-}
-.img_activités2
-{
-    
-    width: 230px;
-}
-
-.img_fort
-{
-    
-    width: 230px;
-}
-
-.img_iles
-{
-    
     width: 230px;
 }
 
@@ -350,8 +278,6 @@ section
     display: flex;
     flex-wrap: wrap;
 }
-
-
 
 footer
 {
