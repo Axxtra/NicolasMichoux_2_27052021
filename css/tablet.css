@@ -1,24 +1,372 @@
-
 #bloc_page
 {
-    margin-left: 40px;
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#conteneur
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 100%;
+    height: 130px;
+    justify-content: unset;
+    margin-left: 0%;
+}
+
+.element:nth-child(1)
+{
+    margin-bottom: 10px;
+    display: flex;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+
+nav a:hover
+{
+    border: none;
+    color: black;
+}
+
+#bloc_titre
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#recherche
+{
+    width: 100%;
+}
+
+
+#conteneur_recherche
+{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: fit-content;
+}
+
+#champ_recherche
+{
+    width: 230px;
+}
+
+#bouton_recherche
+{
+    width: 50px;
+    display: none;
+}
+
+.icone_recherche
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.icone_recherche
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: -10px;
+}
+
+#filtres
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; 
+    margin-left: 20px;
     
 }
 
-body
+#conteneur_filtres
 {
-    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
 }
+
+#conteneur_populaires
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    padding-top: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    margin-top: 20px;
+}
+
+section
+{
+    width: 100%;
+}
+
+
+#conteneur_sections
+{
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+    flex-direction: column-reverse;
+    border: none;
+}
+
+
+
+.conteneur_vignettes
+{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#conteneur_hebergements
+{
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: white;
+    
+}
+
+.phrase_info
+{
+    padding-top: 5px;
+    width: 100%;
+    margin: 0%;
+}
+
+.fond_hebergement
+{
+    background-color: white;
+    width: 335px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px #F2F2F2;
+    margin-bottom: 12px;
+    
+}
+
+.chambre_hebergement
+{
+    height: 115px;
+    width: 325px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 5px;
+    object-fit: cover;
+    
+    
+}
+
+.titre_hebergement
+{
+    padding-left: 10px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.prix_hebergement
+{
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 10px; 
+}
+
+.note_hebergement
+{
+    color: #0065FC;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.phrase_hebergement
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+
+
+.fond_populaires
+{
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+.texte_populaires
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+
+
+
+.conteneur_titrepop
+{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+
+
+}
+
+.phrase_pop
+{
+    margin-top: 30px;
+    font-size: 17px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.icone_pop
+{
+    margin: auto;
+    margin-right: 20px;
+}
+
+
+
+.phrase
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;  
+}
+
+#conteneur_activites
+{
+    display: flex;
+    
+    height: fit-content;
+    padding-top: 15px;
+    width: 100%;
+    border-radius: 0px;
+    
+    
+}
+
+.conteneur_vignettes2
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.fond_activités1
+{
+    
+    width: 230px;
+    
+    
+}
+
+.fond_activités2
+{
+    
+    width: 230px;
+    
+}
+
+.conteneur_double
+{
+    
+    
+    flex-direction: column;
+    width: auto;
+    margin :auto;
+}
+
+.fond_fort
+{
+    
+    width: 230px;
+}
+
+.fond_frioul
+{
+    
+    width: 230px;
+}
+
+.img_activités1
+{
+    
+    width: 230px;
+}
+.img_activités2
+{
+    
+    width: 230px;
+}
+
+.img_fort
+{
+    
+    width: 230px;
+}
+
+.img_iles
+{
+    
+    width: 230px;
+}
+
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 footer
 {
-    background-color: #F2F2F2;
-    width: 1440px;
-    height: 150%;
+    height: auto;
+    width: 100%;
+    margin: 0%;
 }
 
-#conteneur_footer
+.liens_footer
 {
-    height: 100%;
-    background-color: orange;
+    margin-bottom: 20px;
+}
+
+#conteneur_global
+{
+    padding-left: 0px;
+    padding-right: 0px;
 }
