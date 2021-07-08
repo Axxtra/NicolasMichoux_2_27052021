@@ -1,7 +1,8 @@
 body
 {
     margin: 0%;
-    width: 376px;
+    max-width: 576px;
+    
 }
 
 #bloc_page
@@ -16,18 +17,19 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
-    width: 100%;
+    width: 100vw;
     height: 100%;
     justify-content: unset;
     margin-left: 0%;
+    margin-right: 0%;
 }
 
 .element:nth-child(1)
 {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     display: flex;
-    padding-bottom: 10px;
-    margin-left: 20px;
+    padding-bottom: 1%;
+    margin-left: 4%;
 }
 
 .element:nth-child(2)
@@ -35,7 +37,7 @@ body
     display: flex;
     order: 3;
     padding-bottom: 10px;
-    width: 50%;
+    width: 50vw;
     justify-content: center;
     border-bottom:  3px solid #0065FC;
 }
@@ -48,7 +50,7 @@ body
     margin-right:-10px;
     margin: 0;
     padding-bottom: 10px;
-    width: 50%;
+    width: 50vw;
     border-bottom: 3px solid #F2F2F2;
 }
 
@@ -67,8 +69,8 @@ nav a:hover
 
 #bloc_titre
 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 
 #recherche
@@ -80,8 +82,8 @@ nav a:hover
 #conteneur_recherche
 {
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 4%;
+    margin-right: 2%;
     width: fit-content;
 }
 
@@ -115,15 +117,25 @@ nav a:hover
     display: flex;
     width: 100%;
     flex-wrap: wrap; 
-    margin-left: 20px;
+}
+
+.mot_filtre
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 4%;
 }
 
 #conteneur_filtres
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     flex-wrap: wrap;
+    
+    
+    
 }
 
 .elements_filtres
@@ -131,6 +143,8 @@ nav a:hover
     display: flex;
     margin-top: 13px;
     width: 100%;
+    margin-left: 4%;
+    
 }
 
 #filtre_double
@@ -213,7 +227,7 @@ section
 
 .fond_hebergement
 {
-    width: 335px;
+    width: 90vw;
     border: 1px #F2F2F2 solid;
     box-shadow: 2px 2px 4px #F2F2F2;
     margin-bottom: 12px;
@@ -221,7 +235,7 @@ section
 
 .chambre_hebergement
 {
-    width: 325px;
+    width: 97%;
     margin: 5px;
 }
 
@@ -243,16 +257,16 @@ section
     width: 100%;
     height: auto;
     justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap; 
     border-radius: 0%;
 }
 
 .fond_populaires
 {
-    width: 335px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 3%;
 }
 
 .texte_populaires
@@ -265,16 +279,15 @@ section
 
 .conteneur_titrepop
 {
-    margin-left: 35px;
+    margin-left: 5%;
     margin-bottom: 15px;
 }
 
 .phrase_pop
 {
-    margin-top: 30px;
+    margin-top: 3%;
     font-size: 17px;
-    margin: 0px;
-    justify-content: center;
+    margin: 0%;
 }
 
 .icone_pop
@@ -292,7 +305,7 @@ section
 
 .conteneur_vignettes2
 {
-    height: 1310px;
+    height: auto;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
@@ -301,10 +314,9 @@ section
 
 .phrase
 {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;  
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-top: 2%;  
 }
 
 
@@ -312,15 +324,15 @@ section
 .fond_activités1, .fond_activités2, .fond_fort, .fond_frioul
 {
     height: 190px;
-    width: 325px;
-    margin-top: 25px;
+    width: 90vw;
+    margin-top: 2.5%;
     
 }
 
 .conteneur_double
 {
     height: auto;
-    width: 325px;
+    width: 90vw;
     flex-direction: column;
     
 }
@@ -328,7 +340,7 @@ section
 .img_activités1, .img_activités2, .img_fort, .img_iles
 {
     height: 115px;
-    width: 325px;
+    width: 100%;
     
 }
 
@@ -344,7 +356,7 @@ section
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 footer
@@ -356,7 +368,7 @@ footer
 
 .liens_footer
 {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 #conteneur_global

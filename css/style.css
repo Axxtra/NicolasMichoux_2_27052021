@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MaSuperPolice';
-    src: url('police/Raleway-Black.ttf') format('truetype'),       
+    src: url('police/Raleway-Black.ttf')format('truetype'),       
 }
 
 body 
@@ -61,7 +61,7 @@ nav a:hover
 {
     color: #0065FC;
     border-top : 2px solid #0065FC;
-    padding: 20px 20 px 0px 40px;
+    padding: 20px 20px 0px 40px;
 }
 
 section a:hover
@@ -118,7 +118,7 @@ section a:hover
     background-color: #0065FC;
     width: 135px;
     height: 50px;
-    border: 1px #0065FC solid;
+    border: 1px solid;
     border-radius: 1px 15px 15px 1px;
     margin-left :-6px;
 }
@@ -145,8 +145,8 @@ section a:hover
     align-items: center;
     background-color: #F2F2F2;
     width: 50px;
-    height: 48px;
-    border: 1px #F2F2F2 solid;
+    height: 50px;
+    
     border-radius: 15px 1px 1px 15px;
 }
 

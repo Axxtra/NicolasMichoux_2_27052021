@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
-    width: 100%;
+    width: 97%;
     height: 130px;
     justify-content: unset;
     margin-left: 0%;
@@ -64,6 +64,8 @@ nav a:hover
     display: none;
 }
 
+
+
 .icone_recherche
 {
     display: flex;
@@ -99,7 +101,7 @@ nav a:hover
 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 97%;
 }
 
 #conteneur_populaires
@@ -112,7 +114,15 @@ nav a:hover
     height: 100%;
     width: 100%;
     border-radius: 0%;
-    margin-top: 20px;
+    margin-top: 2%;
+}
+
+#conteneur_info
+{   
+    display: flex;
+    align-content: center;
+    margin-left: 3%;
+    width: auto;
 }
 
 section
@@ -137,10 +147,12 @@ section
 
 #conteneur_hebergements
 {
-    width: 100%;
+    width: 97%;
     margin-top: 0%;
     margin-bottom: 0%;
     background-color: white; 
+    margin-right: 2%;
+    margin-left: 1%;
 }
 
 .phrase_info
@@ -153,7 +165,7 @@ section
 .fond_hebergement
 {
     background-color: white;
-    width: 335px;
+    width: 30%;
     border: 1px #F2F2F2 solid;
     border-radius: 20px;
     display: flex;
@@ -165,7 +177,7 @@ section
 .chambre_hebergement
 {
     height: 115px;
-    width: 325px;
+    width: 97%;
     border-radius: 20px 20px 0px 0px;
     margin: 5px;
     object-fit: cover;
@@ -203,9 +215,11 @@ section
 .fond_populaires
 {
     flex-direction: row;
-    width: 30%;
+    width: 27%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    
 }
 
 .texte_populaires
@@ -217,14 +231,14 @@ section
 
 .conteneur_titrepop
 {
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-left: 2%;
+    margin-bottom: 2%;
     width: 100%;
 }
 
 .phrase_pop
 {
-    margin-top: 30px;
+    margin-top: 3%;
     font-size: 17px;
     margin: 0px;
     justify-content: center;
@@ -233,22 +247,22 @@ section
 .icone_pop
 {
     margin: auto;
-    margin-right: 20px;
+    margin-right: 3%;
 }
 
 .phrase
 {
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;  
+    margin-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%; 
 }
 
 #conteneur_activites
 {
     display: flex;
     height: fit-content;
-    padding-top: 15px;
+    padding-top: 1.5%;
     width: 100%;
     border-radius: 0px;
 }
@@ -257,8 +271,10 @@ section
 {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-right: 0%;
+    margin-left: 3%;
 }
 
 .conteneur_double
@@ -270,7 +286,7 @@ section
 
 .fond_fort, .fond_frioul, .img_activités1, .img_activités2, .img_fort, .img_iles, .fond_activités2, .fond_activités1
 {
-    width: 230px;
+    width: 20vw;
 }
 
 #conteneur
