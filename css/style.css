@@ -321,7 +321,7 @@ section a:hover
     font-size: 21px;
     margin-top: 15px;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .phrase_hebergement
@@ -329,15 +329,15 @@ section a:hover
     font-weight: bold;
     font-size: 18px;
     margin-left: 40px;
+    
 }
 
 .phrase_pop
 {
     font-weight: bold;
     font-size: 15px;
-    margin-top: 15px;
     margin-left: 40px;
-    margin-bottom: 15px;
+    
 }
 
 .conteneur_vignettes
